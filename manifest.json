@@ -1,0 +1,20 @@
+{
+    "name": "DF matematykaszkolna",
+    "description": "Turn off emotes on matematykaszkolna.pl",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://matematykaszkolna.pl/forum/*"],
+            "js": ["js/content.js"]
+        }
+    ],
+    "icons": {
+        "31": "images/favicon_31.png",
+        "48": "images/favicon_48.png"
+    },
+    "browser_action": {
+        "default_icon": "images/favicon_31.png",
+        "default_popup": "home.html"
+    }
+}
